@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <hr>
+    <!--영역을 구분하는 div태그-->
+    <div id="wrap" style="background-color: antiquewhite;">
+        <div id="header" style="background-color:aqua; height:100px;">
+            <span style="background-color: antiquewhite;">영역구분</span>
+            <span style="background-color: rgb(255, 207, 144);">영역구분</span>
+            <span style="background-color: rgb(175, 99, 0);">영역구분</span>
+        </div>
+        <div id="main" style="background-color:aliceblue; height:100px;">
+            영역구분
+        </div>
+        <div id="footer" style="background-color:burlywood; height:100px;">
+            영역구분
+        </div>
+    </div>
+    <!--span도 영역을 구분하는 태그지만 텍스트만큼의 영역만 먹음-->
+
+
+    <hr>
+
+    <form>
+        <input type="text" placeholder="아이디 입력" required><br>
+        <input type="text" value="읽기 전용" readonly><br>
+        <input type="tel" required pattern="\d{3}-\d{4}-\d{4}" placeholder="010-1234-1234"><br>
+
+        <input type="submit" value="전송">
+        <input type="button" value="이전" disabled>
+        <input type="button" value="다음">
+        <button type="button">버튼입니다</button>
+    </form>
+    <!--required 는 필수로 입력하도록 해줌-->
+    <!--disabled는 클릭되지 않도록 처리-->
+    <!--readonly는 읽기 전용-->
+
+    <hr>
+    <fieldset>
+        <legend>취미 조사</legend>
+        <input type="text" id="id"><br>
+
+        <label for="h1">책</label><input id="h1" type="checkbox">
+        <br>
+        <label for="id">입력</label>
+    </fieldset>
+    <!--for="a" id="a" a처럼 값을 동일하게 세팅-->
+    <!--label for는 정확히 하나의 input만 가리켜야 함, 유일한 값으로 세팅-->
+
+    <label>인라인</label>
+
+    <form action="ex02.html" method="get">
+        <select size="1" name="test1">
+            <option value="p1">사과</option>
+            <option value="p2">당근</option>
+            <option value="p3">코끼리</option>
+        </select><br>
+
+        <hr>
+
+        <input type="text" placeholder="input name" name="이름"><br>
+        <input type="text" placeholder="input address" name="query"><br>
+        <textarea cols="25" rows="5" name="test"></textarea><br>
+
+        <input type="reset" value="초기화"><br>
+        <input type="submit" value="서브밋"><br>
+
+        <input type="button" value="버튼"><br>
+    </form>
+    <!--reset,submit은 form태그 안에 들어있어야함-->
+    <!-- method="get" 따로 지정하지 않으면 기본 get방식 적용-->
+
+    <hr>
+
+    멍<input type="checkbox" name="hobby">
+    밍<input type="checkbox" name="hobby">
+    몽<input type="checkbox" name="hobby">
+    <!--같은 name이지만 중복체크가 가능-->
+
+    <hr>
+
+    10<input type="radio" name="age" checked>
+    20<input type="radio" name="age">
+    30<input type="radio" name="age">
+    40<input type="radio" name="age">
+    50<input type="radio" name="age"><br>
+    <!--name을 사용해서 중복 선택이 불가능하도록 설정, name이름이 같은 것들끼리 하나의 그룹이 됨-->
+    <!--checked는 반드시 하나를 선택해야하도록 초기값으로 이미 선택되도록 세팅-->
+
+    <hr>
+
+    <input type="color"><br>
+    <input type="range"><br>
+    <input type="radio"><br>
+    <input type="checkbox"><br>
+    <input type="hidden" value="안녕하세요"><br>
+
+    <hr>
+
+    <input type="text" value="내용 입력" size="10" maxlength="10"><br>
+    <!--maxlength는 10이 최대-->
+    <input type="password" value="123456"><br>
+    <input type="email" placeholder="test@test.com"><br>
+    <input type="search" value="검색 x"><br>
+    <input type="tel" placeholder="010-1234-1234"><br>
+    <input type="number" value="1" min="1" max="10">
+
+    <hr>
+
+    <input type="button" value="버튼"><br>
+    <input type="submit" value="서브밋"><br>
+    <input type="reset" value="reset"><br>
+    <!--value는 버튼 안에 들어가는 값-->
+    <input type="image" src="다운로드.jfif" width="100px" height="100px" alt=""><br>
+    <img src="" width="100px" height="100px" alt="이미지 대신 글자로 표현"><br>
+    <input type="file"><br>
+</body>
+
+</html>
