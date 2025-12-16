@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="quiz02.html">
+        <table>
+            <tr>
+                <td colspan="2">다음
+                    <span style="background-color: goldenrod;">내용에 맞게</span> 입력하시오.</td>
+                <td rowspan="3">
+                    <img src="다운로드.jfif" width="80%">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">전공 분야를 입력하세요
+                    <select size="1" name="field">
+                        <option value="s1">소프트웨어</option>
+                        <option value="s2">소프트웨어2</option>
+                        <option value="s3">소프트웨어3</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    이름<br>
+                    아이디<br>
+                    비밀번호<br>
+                </td>
+                <td>
+
+                    <input type="text" value=""><br>
+                    <input type="text" value=""><br>
+                    <input type="password" value=""><br>
+
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <fieldset>
+                        <legend>성별조사</legend>
+                        여성<input type="radio" name="s" checked>
+                        남성<input type="radio" name="s">
+                    </fieldset>
+                </td>
+
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <fieldset>
+                        <legend>취미 조사</legend>
+                        책읽기<input type="checkbox" value="">
+                        공부하기<input type="checkbox" value="">
+                        책 읽으며 공부하기<input type="checkbox" value="">
+                        컴퓨터<input type="checkbox" value="">
+                    </fieldset>
+                </td>
+
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <fieldset>
+                        <legend>하고 싶은 말</legend>
+                        <textarea cols="30"></textarea>
+                    </fieldset>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <input type="submit" value="완료">
+                    <input type="reset" value="다시 작성">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <hr>
+
+    <form>
+        <table>
+            <tr>
+                <td>
+                    다음
+                    <span style="background-color: goldenrod;">내용에 맞게</span> 입력하시오.
+                    <br>
+                    전공 분야를 입력하세요.
+                    <select size="1">
+                        <option>소프트웨어</option>
+                        <label for="name"></label><input id="name">
+
+
+                    </select>
+
+                    <td>
+                        <a href="quiz02.html" title="quiz02 이동">
+                            <img src="다운로드.jfif" width="100px" height="100px">
+                        </a>
+                    </td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <fieldset>
+                        <legend>성별조사</legend>
+                        <label for="m">여성</label><input id="m" type="radio" name="gender" checked>
+                        남성</label><input type="radio" name="gender">
+                    </fieldset>
+                    <fieldset>
+                        <legend>취미</legend>
+                        <label for="b">책</label>
+                        <input id="b" type="checkbox">
+                        멍<input type="checkbox">
+                    </fieldset>
+                    <fieldset>
+                        <legend>하고 싶은 말</legend>
+                        <textarea cols="30"></textarea>
+                    </fieldset>
+
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
